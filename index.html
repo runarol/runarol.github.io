@@ -12,9 +12,6 @@
 			
 		<style>
 				body{
-				background-image: url("test.jpg")
-				background-repeat: no-repeat
-				background-size: cover;
 				background-color: #F8FAF4;
 				text-align: center;
 				font-family: Arial, Helvetica, sans-serif;
@@ -23,21 +20,34 @@
 				font-style: italic;
 				font-weight: normal;
 			}
+				.hero-image {
+				background-image: url("test.jpg");
+				height: 500px;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+			}
+				.hero-text {
+				text-align: center;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: white;
+			}
 		</style>
     </head>
 <body>
-	<body >
-    <header>
-        <div>
-                <h1>Runar på tur</h1>
-        </div>
-    </header>
-	<nav class="main-nav">
-            <a class="fa fa-github fa-lg" href="https://runarol.github.io/fjellforhold">Forhold i fjellet akkurat nå</a>
-            <a class="fa fa-github fa-lg" href="https://mastodon.social/@erikjohannes">Nyttige planleggingsressurser</a>
-            <a class="fa fa-rss fa-lg" href="/index.xml">Planlagte turer</a>
-			<a class="fa fa-rss fa-lg" href="/index.xml">Gjennomførte turer</a>		
-   	</nav>
+    <div class="hero-image">
+	<div class="hero-text">
+    <h1 style="font-size:50px">Runar Øwre Løkkås</h1>
+    <h3>Kom deg ut!</h3>
+    <button>Fjellforhold</button>
+	<button>Ressurser</button>
+	<button>Gjennomførte turer</button>
+	</div>
+	</div>
 	<div>
   <h2>Om meg</h2>
 	<p> 

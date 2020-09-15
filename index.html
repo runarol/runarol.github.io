@@ -38,6 +38,32 @@
 				p {
 				font-family: georgia, 'times new roman', serif;
 			}
+				ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+				position: sticky;
+				top: 0;
+				width: 100%;
+			}
+				li {
+				float: left;
+			}
+				li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+				li a:hover {
+				background-color: #111;
+			}
+				.active {
+				background-color: #4CAF50;
+			}
 		</style>
     </head>
 <body>
@@ -45,11 +71,15 @@
 	<div class="hero-text">
     <h1 style="font-size:50px">Runar Øwre Løkkås</h1>
     <h3 style="font-size:20px">Mitt friluftsliv</h3>
-    <a href="https://runarol.github.io/fjellforhold"><button>Fjellforhold </button></a>
-	<a href="https://runarol.github.io/ressurser"><button>Ressurser</button></a>
-	<a href="https://runarol.github.io/blogg"><button>Blogg</button></a>
 	</div>
 	</div>
+		<ul>
+			<li><a class="active" href="https://runarol.github.io/">Hjem</a></li>
+			<li><a href="https://runarol.github.io/fjellforhold">Fjellforhold</a></li>
+			<li><a href="https://runarol.github.io/ressurser">Planleggingsressurser</a></li>
+			<li><a href="https://runarol.github.io/blogg">Blogg</a></li>
+			<li style="float:right"><a href="about.asp">Om meg</a></li>
+		</ul>
 	<div>
   <h2 align=center>Om meg</h2>
 	<p style=font-style: italic;>

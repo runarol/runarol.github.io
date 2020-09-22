@@ -35,6 +35,32 @@
 				font-style: italic;
 				font-weight: normal;
 			}	
+				ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+				position: sticky;
+				top: 0;
+				width: 100%;
+			}
+				li {
+				float: left;
+			}
+				li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+				li a:hover {
+				background-color: #111;
+			}
+				.active {
+				background-color: #4CAF50;
+			}
 	</style>
     </head>
 <body>
@@ -43,6 +69,13 @@
                 <h1>Ressurser</h1>
         </div>
     </header>
+		<ul>
+			<li><a href="https://runarol.github.io/">Hjem</a></li>
+			<li><a href="https://runarol.github.io/fjellforhold">Fjellforhold</a></li>
+			<li><a class="active" href="https://runarol.github.io/ressurser">Planleggingsressurser</a></li>
+			<li><a href="https://runarol.github.io/blogg">Blogg</a></li>
+			<li style="float:right"><a href="about.asp">Om meg</a></li>
+		</ul>
 	<nav class="main-nav">
 			<a class="fa fa-rss fa-lg" href="/index.xml">Varsom</a>
 			<a class="fa fa-rss fa-lg" href="/index.xml">Regobs</a>		
